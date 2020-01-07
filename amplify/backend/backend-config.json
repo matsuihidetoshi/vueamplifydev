@@ -1,1 +1,26 @@
-{}
+{
+	"auth": {
+		"vueamplifydev52df5a6b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"vueamplifydev": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authvueamplifydev52df5a6b"
+						}
+					}
+				}
+			}
+		}
+	}
+}
