@@ -2,7 +2,9 @@
 
 Amplify + Vue.js で簡単にサーバーレスPWAを構築するためのリポジトリです。  
 Chrome, Cloud9, GitHubを使う想定です。  
-構築の手順を以下に記します。
+なお、AWSのアカウント管理や、Cloud9などの環境設定は最低限のものになります。  
+したがって、実際の運用に際しては、よりセキュアな設定を別途行う事を推奨します。  
+Cloud9環境をChromeにて表示した状態の想定で構築の手順を以下に記します。
 
 ## このリポジトリのクローン
 
@@ -354,7 +356,7 @@ npm run buildと入力しEnter
 ? Build Command:  npm run build
 ```
 
-### サーバー起動コマンドを入力(サーバー起動コマンドを入力しEnter)
+#### サーバー起動コマンドを入力(サーバー起動コマンドを入力しEnter)
 
 npm run serveと入力しEnter
 
@@ -362,7 +364,7 @@ npm run serveと入力しEnter
 ? Start Command: npm run serve
 ```
 
-### AWSプロファイルの使用(y or nを入力しEnter)
+#### AWSプロファイルの使用(y or nを入力しEnter)
 
 yを入力しEnter
 
