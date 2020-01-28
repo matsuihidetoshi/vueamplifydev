@@ -26,7 +26,7 @@ Vue CLI v4.1.2
 ❯ Manually select features 
 ```
 #### 追加パッケージを選択(↑↓でカーソル移動、Spaceで選択、Enterで決定)
-#### 下記の通り、Babel, Progressive Web App (PWA) Support, Router, Vuex, Linter / Formatterを選択
+下記の通り、Babel, Progressive Web App (PWA) Support, Router, Vuex, Linter / Formatterを選択
 ```
 ? Check the features needed for your project: 
  ◉ Babel
@@ -44,7 +44,7 @@ Vue CLI v4.1.2
  ? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) y
  ```
  #### ESLintの設定を選択(↑↓でカーソル移動、Enterで決定)
- #### デフォルトのESLint with error prevention onlyを選択
+ デフォルトのESLint with error prevention onlyを選択
  ```
  ? Pick a linter / formatter config: (Use arrow keys)
 ❯ ESLint with error prevention only 
@@ -53,7 +53,7 @@ Vue CLI v4.1.2
   ESLint + Prettier 
 ```
 #### Lintのタイミングの設定(↑↓でカーソル移動、Enterで決定)
-#### Lint on saveを選択
+Lint on saveを選択
 ```
 ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ❯◉ Lint on save
