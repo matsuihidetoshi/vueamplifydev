@@ -14,7 +14,11 @@ git clone https://github.com/matsuihidetoshi/vueamplifydev.git
 
 ## 必要CLIツールインストール
 
-#### Vue.jsプロジェクトを作成するためにVue.js CLIをインストール
+今回のアプリケーションの構築のために、Vue.jsのプロジェクトを容易に作成できるVue CLIと  
+Amplifyによってアプリケーションのフロントエンド・バックエンドをコマンドで容易に構築できるAmplify CLIの
+二つのCLIが必要なので、そのインストールを実施します。
+
+#### Vue.jsプロジェクトを作成するためにVue CLIをインストール
 
 ```
 npm i -g @vue/cli
@@ -27,6 +31,8 @@ npm i -g @aws-amplify/cli
 ```
 
 ## Vue.jsプロジェクトを作成
+
+Vue CLIを使って、必要な設定を行いながらVue.jsプロジェクトを作成していきます。
 
 #### notesというプロジェクト/ディレクトリ名で作成
 
@@ -110,9 +116,17 @@ Vue CLI v4.1.2
 
 ## Vue.jsプロジェクトにCloud9向けの設定を追加
 
+このままでは、Cloud9の仕組み上、起動した開発環境のサーバーをうまくプレビューできないため  
+設定を追加します。
+
+#### 設定ファイルの追加
+
 vueamplifydev/vue.config.jsをnotes/vue.config.jsとなる様にコピー
 
 ## テスト起動
+
+開発環境のローカルサーバーを起動してプレビューし、問題なくVue.jsプロジェクトが  
+立ち上がることを確認します。
 
 #### Vue.jsプロジェクトフォルダ(notes)に移動
 
@@ -130,6 +144,8 @@ Cloud9画面の上部のPreview→Preview Running Applicationを選択し、Vue.
 *そのままサーバーは起動したまま、別ターミナルを開き、notesディレクトリに移動して以降の作業を実施
 
 ## Amplify初期設定
+
+Amplify CLIを使用して
 
 #### Amplify CLIから機能追加・各リソースの構築ができる様に設定
 
