@@ -568,6 +568,33 @@ Some next steps:
 "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
 ```
 
+#### GraphQLスキーマの変更
+
+下記の通り、/notes/amplify/backend/api/notes/schema.graphqlのファイルを編集
+
+```
+type Task 
+  @model 
+  @auth(rules: [
+      {allow: groups, groups: ["Managers"], queries: null, mutations: [create, update, delete]},
+      {allow: groups, groups: ["Employees"], queries: [get, list], mutations: null}
+    ])
+{
+  id: ID!
+  title: String!
+  description: String
+  status: String
+}
+type PrivateNote
+  @model
+  @auth(rules: [{allow: owner}])
+{
+  id: ID!
+  content: String!
+  updatedAt: String       #この1行のみ追加
+}
+```
+
 
 
 
