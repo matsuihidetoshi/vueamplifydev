@@ -172,6 +172,65 @@ Could not update credentialsと表示されるが、「Fource update」ボタン
 ```
 Successfully set up the new user.
 ```
+## Vue.jsプロジェクトをAmplifyプロジェクトとして初期化
+```
+amplify init
+```
+#### プロジェクト名の設定(プロジェクト名を入力しEnter)
+デフォルト(Vue.jsプロジェクトとしての名前:notes)のままEnter
+```
+Note: It is recommended to run this command from the root of your app directory
+? Enter a name for the project (notes)
+```
+#### 環境名の設定(環境名を入力しEnter)
+任意だが、今回はdefaultと入力しEnter
+```
+? Enter a name for the environment default
+```
+#### エディタの設定(↑↓でカーソル移動、Enterで決定)
+Noneを選択しEnter
+```
+? Choose your default editor: 
+  Visual Studio Code 
+  Atom Editor 
+  Sublime Text 
+  IntelliJ IDEA 
+  Vim (via Terminal, Mac OS only) 
+  Emacs (via Terminal, Mac OS only) 
+❯ None
+```
+#### アプリケーションのタイプを選択(↑↓でカーソル移動、Enterで決定)
+javascriptを選択
+```
+? Choose the type of app that you're building (Use arrow keys)
+  android 
+  ios 
+❯ javascript
+```
+#### フレームワークを選択(↑↓でカーソル移動、Enterで決定)
+vueを選択
+```
+? What javascript framework are you using (Use arrow keys)
+  angular 
+  ember 
+  ionic 
+  react 
+  react-native 
+❯ vue 
+  none
+```
+#### ソースディレクトリを指定(ソースディレクトリ名を入力しEnter)
+デフォルト(src)のままEnter
+```
+? Source Directory Path:  (src)
+```
+#### ディストリビューションディレクトリを指定(ディストリビューションディレクトリ名を入力しEnter)
+デフォルト(dist)のままEnter
+```
+? Distribution Directory Path: (dist)
+```
+
+
 
 
 
