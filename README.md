@@ -417,7 +417,7 @@ Try "amplify add api" to create a backend API and then "amplify publish" to depl
 ## 認証機能の追加
 
 アプリケーションに認証(登録・メール認証・サインイン・サインアウト・パスワードリセット）機能を追加します。  
-Amplifyを導入しているため、CLIからコマンドを実行することで最低限必要なフロントエンドのコードの生成と
+Amplifyを導入しているため、コマンドを実行することで最低限必要なフロントエンドのコードの生成と
 バックエンドの認証基盤(Lambda + Cognito)の構築を数ステップで完了できます。
 
 #### 認証機能追加コマンド実行
@@ -463,6 +463,13 @@ No, I am done.を選択しEnter
   Yes, I want to make some additional changes.
 ```
 
+## APIの追加
+
+アプリケーションに基本的なAPIを追加します。  
+認証機能と同様、コマンドで簡単にフロントエンド側のコードと、CRUDが可能なAPIバックエンド  
+(AppSync + DynamoDB)を構築できます。  
+また、GraphQLのSubscriptionにより、Websocketを使ったイベントドリブンなフロントエンドへの  
+リアルタイムデータ更新を実現します。
 
 
 
