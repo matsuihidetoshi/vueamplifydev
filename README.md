@@ -414,10 +414,54 @@ Pro tip:
 Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
 ```
 
+## 認証機能の追加
 
+アプリケーションに認証(登録・メール認証・サインイン・サインアウト・パスワードリセット）機能を追加します。  
+Amplifyを導入しているため、CLIからコマンドを実行することで最低限必要なフロントエンドのコードの生成と
+バックエンドの認証基盤(Lambda + Cognito)の構築を数ステップで完了できます。
 
+#### 認証機能追加コマンド実行
 
+```
+amplify add auth
+```
 
+#### 設定タイプの選択(↑↓でカーソル移動、Enterで決定)
+
+Default configurationを選択しEnter
+
+```
+Do you want to use the default authentication and security configuration? (Us
+e arrow keys)
+❯ Default configuration 
+  Default configuration with Social Provider (Federation) 
+  Manual configuration 
+  I want to learn more. 
+```
+
+#### 認証に使う情報を選択(↑↓でカーソル移動、Enterで決定)
+
+Emailを選択しEnter
+
+```
+ Warning: you will not be able to edit these selections. 
+ How do you want users to be able to sign in? 
+  Username 
+❯ Email 
+  Phone Number 
+  Email and Phone Number 
+  I want to learn more. 
+```
+
+#### 追加の設定に関する選択(↑↓でカーソル移動、Enterで決定)
+
+No, I am done.を選択しEnter
+
+```
+ Do you want to configure advanced settings? (Use arrow keys)
+❯ No, I am done. 
+  Yes, I want to make some additional changes.
+```
 
 
 
