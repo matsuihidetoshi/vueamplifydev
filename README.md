@@ -5,8 +5,11 @@ Chrome, Cloud9, GitHubを使う想定です。
   
 なお、AWSのアカウント管理や、Cloud9などの環境設定は最低限のものになります。  
 したがって、実際の運用に際しては、よりセキュアな設定を別途行う事を推奨します。  
+参考:
+https://note.com/bnctake
   
 また、詳細の情報はAWS Amplifyの公式ページをご参照ください。  
+AWS Amplify:
 https://aws-amplify.github.io/  
 
 以下、Cloud9環境をChromeにて表示した状態の想定で構築の手順を記します。
