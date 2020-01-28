@@ -145,7 +145,8 @@ Cloud9画面の上部のPreview→Preview Running Applicationを選択し、Vue.
 
 ## Amplify初期設定
 
-Amplify CLIを使用して
+Amplify CLIを使用して各種機能追加に伴うコードの生成やAWSリソースの追加を自動で行うことができます。  
+AWSのリソースの操作をCLIから行える様にするために、専用のIAMユーザーの追加と認証情報の設定を行う必要があります。
 
 #### Amplify CLIから機能追加・各リソースの構築ができる様に設定
 
@@ -262,6 +263,11 @@ Successfully set up the new user.
 
 ## Vue.jsプロジェクトをAmplifyプロジェクトとして初期化
 
+Vue.jsプロジェクトをAmplifyプロジェクトとして初期化することで、各種機能追加に伴うコードの自動生成と  
+プロジェクトのフロントエンドに紐付いたバックエンドの役割を担う各種AWSリソースの構築を  
+CLIから実行することができる様になります。  
+この操作が完了すると、同時にAmplifyバックエンドの素体の様なものがCloudFormationによりクラウド上に作成されます。
+
 ```
 amplify init
 ```
@@ -369,6 +375,34 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 ? Do you want to use an AWS profile? (Y/n) y
 ```
 
+#### AWSプロファイルを選択(↑↓でカーソル移動、Enterで決定)
+
+先ほど作成したプロファイル(default)を選択しEnter
+
+```
+? Please choose the profile you want to use (Use arrow keys)
+❯ default
+```
+
+下記の様なメッセージが表示されれば成功
+
+```
+✔ Successfully created initial AWS cloud resources for deployments.
+✔ Initialized provider successfully.
+Initialized your environment successfully.
+
+Your project has been successfully initialized and connected to the cloud!
+
+Some next steps:
+"amplify status" will show you what you've added already and if it's locally configured or deployed
+"amplify add <category>" will allow you to add features like user login or a backend API
+"amplify push" will build all your local backend resources and provision it in the cloud
+“amplify console” to open the Amplify Console and view your project status
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+Pro tip:
+Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
+```
 
 
 
