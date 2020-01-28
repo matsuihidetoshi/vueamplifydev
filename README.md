@@ -3,6 +3,12 @@ Amplify + Vue.js で簡単にサーバーレスPWAを構築するためのリポ
 Cloud9とGitHubを使う想定です。  
 構築の手順を以下に記します。
 
+## このリポジトリのクローン
+必要コードを転用するため、このリポジトリを環境にクローン
+```
+git clone https://github.com/matsuihidetoshi/vueamplifydev.git
+```
+
 ## 必要CLIツールインストール
 #### Vue.jsプロジェクトを作成するためにVue.js CLIをインストール
 ```
@@ -72,8 +78,18 @@ Vue CLI v4.1.2
 ```
 ? Save this as a preset for future projects? (y/N) n
 ```
-
-
+## Vue.jsプロジェクトにCloud9向けの設定を追加
+vueamplifydev/vue.config.jsをnotes/vue.config.jsとなる様にコピー
+## テスト起動
+#### Vue.jsプロジェクトフォルダ(notes)に移動
+```
+cd notes
+```
+#### サーバー起動
+```
+npm run serve
+```
+Cloud9画面の上部のPreview→Preview Running Applicationを選択し、Vue.jsのデフォルト画面が表示されればOK
 
 
 
