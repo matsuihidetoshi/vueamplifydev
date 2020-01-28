@@ -471,7 +471,102 @@ No, I am done.を選択しEnter
 また、GraphQLのSubscriptionにより、Websocketを使ったイベントドリブンなフロントエンドへの  
 リアルタイムデータ更新を実現します。
 
+#### API追加コマンド実行
 
+```
+amplify add api
+```
+
+#### APIのインターフェースを選択(↑↓でカーソル移動、Enterで決定)
+
+GraphQLを選択しEnter
+
+```
+? Please select from one of the below mentioned services: (Use arrow keys)
+❯ GraphQL 
+  REST 
+```
+
+#### APIに名前をつける(API名を入力しEnter)
+
+デフォルトのアプリケーション名(notes)のままEnter
+
+```
+? Provide API name: (notes)
+```
+
+#### APIの認証タイプを選択(↑↓でカーソル移動、Enterで決定)
+
+Amazon Cognito User Poolを選択しEnter
+
+```
+? Choose the default authorization type for the API 
+  API key 
+❯ Amazon Cognito User Pool 
+  IAM 
+  OpenID Connect
+```
+
+#### 追加の設定に関する選択(↑↓でカーソル移動、Enterで決定)
+
+No, I am done.を選択しEnter
+
+```
+? Do you want to configure advanced settings for the GraphQL API (Use arrow ke
+ys)
+❯ No, I am done. 
+  Yes, I want to make some additional changes.
+```
+
+#### GraphQLのスキーマがあるかの確認(y or nを入力しEnter)
+
+nを入力しEnter
+
+```
+? Do you have an annotated GraphQL schema? (y/N) n
+```
+
+#### GraphQLの提携のスキーマを生成するかの確認(y or nを入力しEnter)
+
+yを入力しEnter
+
+```
+? Do you want a guided schema creation? (Y/n) y
+```
+
+#### GraphQLのスキーマの雛形を選択(↑↓でカーソル移動、Enterで決定)
+
+Objects with fine-grained access control  
+(e.g., a project management app with owner-based authorization)を選択しEnter
+
+```
+? What best describes your project: 
+  Single object with fields (e.g., “Todo” with ID, name, description) 
+  One-to-many relationship (e.g., “Blogs” with “Posts” and “Comments”) 
+❯ Objects with fine-grained access control (e.g., a project management app
+  with owner-based authorization)
+```
+
+#### 今すぐGraphQLスキーマを編集するかの確認(y or nを入力しEnter)
+
+yを入力しEnter
+
+```
+? Do you want to edit the schema now? (Y/n) y
+```
+
+下記の様なメッセージが表示されればOK
+
+```
+GraphQL schema compiled successfully.
+
+Edit your schema at /home/ec2-user/environment/notes/amplify/backend/api/notes/schema.graphql or place .graphql files in a directory at /home/ec2-user/environment/notes/amplify/backend/api/notes/schema
+Successfully added resource notes locally
+
+Some next steps:
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+```
 
 
 
