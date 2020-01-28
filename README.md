@@ -5,23 +5,37 @@ Cloud9とGitHubを使う想定です。
 
 ## 必要CLIツールインストール
 ```
-#Vue.jsプロジェクトを作成するためにVue.js CLIをインストール
+# Vue.jsプロジェクトを作成するためにVue.js CLIをインストール
 npm i -g @vue/cli
 
-#Amplifyをプロジェクトに導入し、各種機能を追加するための操作をするためにAmplify CLIをインストール
+# Amplifyをプロジェクトに導入し、各種機能を追加するための操作をするためにAmplify CLIをインストール
 npm i -g @aws-amplify/cli
 ```
 
 ## Vue.jsプロジェクトを作成
 ```
-#notesというプロジェクト/ディレクトリ名で作成
+# notesというプロジェクト/ディレクトリ名で作成
 vue create notes
 
-#Manually(手動設定)を選択(↑↓でカーソル移動、Enterで決定)
+# Manually(手動設定)を選択(↑↓でカーソル移動、Enterで決定)
 Vue CLI v4.1.2
 ? Please pick a preset: 
   default (babel, eslint) 
 ❯ Manually select features 
+
+# 追加パッケージを選択(↑↓でカーソル移動、Spaceで選択、Enterで決定)
+# 下記の通り、Babel, Progressive Web App (PWA) Support,
+# Router, Vuex, Linter / Formatterを選択
+? Check the features needed for your project: 
+ ◉ Babel
+ ◯ TypeScript
+ ◉ Progressive Web App (PWA) Support
+ ◉ Router
+❯◉ Vuex
+ ◯ CSS Pre-processors
+ ◉ Linter / Formatter
+ ◯ Unit Testing
+ ◯ E2E Testing
 
 ```
 
