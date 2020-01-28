@@ -89,7 +89,56 @@ cd notes
 ```
 npm run serve
 ```
-Cloud9画面の上部のPreview→Preview Running Applicationを選択し、Vue.jsのデフォルト画面が表示されればOK
+Cloud9画面の上部のPreview→Preview Running Applicationを選択し、Vue.jsのデフォルト画面が表示されればOK  
+*そのままサーバーは起動したまま、別ターミナルを開き、notesディレクトリに移動して以降の作業を実施
+## Amplify初期設定
+#### Amplify CLIから機能追加・各リソースの構築ができる様に設定
+```
+amplify configure
+```
+#### AWSマネジメントコンソールへのリンクが表示されるが、そのままEnter
+```
+Follow these steps to set up access to your AWS account:
+
+Sign in to your AWS administrator account:
+https://console.aws.amazon.com/
+Press Enter to continue
+```
+#### AWSリソースのリージョン選択(↑↓でカーソル移動、Enterで決定)
+下記の通りap-northeast-1を選択
+```
+Specify the AWS Region
+? region:  
+  eu-west-1 
+  eu-west-2 
+  eu-central-1 
+❯ ap-northeast-1 
+  ap-northeast-2 
+  ap-southeast-1 
+  ap-southeast-2 
+(Move up and down to reveal more choices)
+```
+#### Amplify用IAMユーザーの追加(ユーザー名を入力しEnter)
+任意だが今回はデフォルトのユーザー名を使用(そのままEnter)
+```
+Specify the username of the new IAM user:
+? user name:  (amplify-xxxxx) 
+```
+#### IAMユーザー作成画面を開く
+下記の様に案内されるURLを開く
+```
+Complete the user creation using the AWS console
+https://console.aws.amazon.com/iam/home?region=undefined#/users$new?step=final&accessKey&userNames=amplify-xxxxx&permissionType=policies&policies=arn:aws:iam::aws:policy%2FAdministratorAccess
+Press Enter to continue
+```
+#### IAMユーザー作成
+ブラウザの別タブでAWSマネジメントコンソールのIAMユーザー作成画面が開くので  
+ユーザー詳細の設定→アクセス許可の設定→タグの追加 (オプション)→確認まで全てデフォルトのまま進み  
+「ユーザーの作成」ボタンを押下
+
+
+
+
 
 
 
