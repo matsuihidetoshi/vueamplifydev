@@ -39,7 +39,8 @@ Vue CLI v4.1.2
  ◯ Unit Testing
  ◯ E2E Testing
  ```
- #### Historyモードを選択(yを入力しEnter)
+ #### Historyモードを選択(y or nを入力しEnter)
+ yを選択
  ```
  ? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) y
  ```
@@ -53,15 +54,24 @@ Vue CLI v4.1.2
   ESLint + Prettier 
 ```
 #### Lintのタイミングの設定(↑↓でカーソル移動、Enterで決定)
-Lint on saveを選択
+デフォルトのLint on saveを選択
 ```
 ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ❯◉ Lint on save
  ◯ Lint and fix on commit
  ```
-
-
-
+#### Configファイルの設定(↑↓でカーソル移動、Enterで決定)
+デフォルトのIn dedicated config filesを選択
+```
+? Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
+❯ In dedicated config files 
+  In package.json
+```
+#### 今回の設定を保存指定次回以降に転用するかの選択(y or nを入力しEnter)
+任意だが、今回はnを選択
+```
+? Save this as a preset for future projects? (y/N) n
+```
 
 
 
