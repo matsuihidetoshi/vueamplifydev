@@ -1,6 +1,6 @@
 # Amplify + Vue.js Hands On
 Amplify + Vue.js で簡単にサーバーレスPWAを構築するためのリポジトリです。  
-Cloud9とGitHubを使う想定です。  
+Chrome, Cloud9, GitHubを使う想定です。  
 構築の手順を以下に記します。
 
 ## このリポジトリのクローン
@@ -135,6 +135,48 @@ Press Enter to continue
 ブラウザの別タブでAWSマネジメントコンソールのIAMユーザー作成画面が開くので  
 ユーザー詳細の設定→アクセス許可の設定→タグの追加 (オプション)→確認まで全てデフォルトのまま進み  
 「ユーザーの作成」ボタンを押下
+#### IAMユーザーセキュリティ認証情報の取得
+IAMユーザーセキュリティ認証情報のページが開くので、「.csvのダウンロード」ボタンを押下  
+*このあとすぐダウンロードしたファイル内の情報を使用するため、ブラウザ下部のダウンロードファイルの表示を  
+開いたままにするなどし、すぐに開ける様にしておく
+#### ターミナル操作に戻る
+Cloud9環境の画面に戻る
+#### IAMユーザー作成完了
+下記の表示の状態で、Enter
+```
+Complete the user creation using the AWS console
+https://console.aws.amazon.com/iam/home?region=undefined#/users$new?step=final&accessKey&userNames=amplify-xxxxx&permissionType=policies&policies=arn:aws:iam::aws:policy%2FAdministratorAccess
+Press Enter to continue
+```
+#### アクセスキーIDの入力(アクセスキーIDを入力しEnter)
+先ほどダウンロードした.csvファイルをブラウザ下部から開き、Access key IDをコピー  
+ターミナルに戻り、ペーストしEnter
+```
+Enter the access key of the newly created user:
+? accessKeyId:  (<YOUR_ACCESS_KEY_ID>) 
+```
+#### シークレットアクセスキーを入力(シークレットアクセスキーを入力しEnter)
+同じく.csvファイルよりSecret access keyをコピー  
+ターミナルに戻り、ペーストしEnter
+```
+? secretAccessKey:  (<YOUR_SECRET_ACCESS_KEY>) 
+```
+#### プロファイルに名前をつける(プロファイル名を入力しEnter)
+デフォルトのままEnter
+```
+Profile Name:  (default)
+```
+*ここで、AWS managed temporary credentialsというダイアログが立ち上がり  
+Could not update credentialsと表示されるが、「Fource update」ボタンを押下すればOK  
+ターミナルは下記のメッセージが出力されていればOK
+```
+Successfully set up the new user.
+```
+
+
+
+
+
 
 
 
