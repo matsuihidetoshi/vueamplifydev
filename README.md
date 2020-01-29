@@ -672,6 +672,28 @@ ns and subscriptions (Y/n) y
 ? Enter maximum statement depth [increase from default if your schema is deeply nested] (2)
 ```
 
+下記の様なメッセージが表示されればOK
+
+```
+✔ Generated GraphQL operations successfully and saved at src/graphql
+✔ All resources are updated in the cloud
+
+GraphQL endpoint: https://xxxxxxxxxxxxxxxxxxxxxxxxxx.appsync-api.ap-northeast-1.amazonaws.com/graphql
+
+ec2-user:~/environment/notes (master)
+```
+
+## フロントエンド側のコードを作成
+
+ここまでで、  
+
+- 認証
+- API
+
+という二つの機能の最低限のコードと、バックエンドの環境が生成されました。  
+ここから、フロントエンドで実際に機能するコードを作成していきます。  
+今回は、すでにこのリポジトリにコードがあるのでそれをコピーしていきます。
+
 
 
 
