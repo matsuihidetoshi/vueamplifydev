@@ -131,7 +131,13 @@ Vue CLI v4.1.2
 
 #### 設定ファイルの追加
 
-vueamplifydev/vue.config.jsをnotes/vue.config.jsとなる様にコピー
+- vueamplifydev/vue.config.js
+
+を
+
+- notes/vue.config.js
+
+となる様にコピー
 
 ## テスト起動
 
@@ -694,6 +700,86 @@ ec2-user:~/environment/notes (master)
 ここから、フロントエンドで実際に機能するコードを作成していきます。  
 今回は、すでにこのリポジトリにコードがあるのでそれをコピーしていきます。
 
+#### 必要パッケージのインストール
+
+```
+npm i aws-amplify aws-amplify-vue lodash
+```
+
+#### localise.js
+
+ログイン画面を日本語メッセージにするための設定を記述したファイルです
+
+- vueamplifydev/src/localize.js
+
+を
+
+- notes/src/localize.js
+
+となる様にコピー
+
+#### SignIn.vue
+
+認証機能を提供するコンポーネントです
+
+- vueamplifydev/src/components/SignIn.vue
+
+を
+
+- notes/src/components/SignIn.vue
+
+となる様にコピー
+
+#### PrivateNote.vue
+
+今回の主要な機能であるメモ機能を提供するコンポーネントです
+
+- vueamplifydev/src/components/PrivateNote.vue
+
+を
+
+- notes/src/components/PrivateNote.vue
+
+となる様にコピー
+
+#### main.js
+
+アプリケーションのエントリーポイントになるファイルです。  
+Amplify関連のパッケージを導入するために記述を追加します。
+
+- vueamplifydev/src/main.js
+
+の内容を
+
+- notes/src/main.js
+
+に上書き
+
+#### router/index.js
+
+ルーティングの設定を記述するファイルです。  
+ログイン状態を管理してページのアクセス制御をします。
+
+- vueamplifydev/src/router/index.js
+
+の内容を
+
+- notes/src/router/index.js
+
+に上書き
+
+#### App.vue
+
+アプリケーションの共通レイアウトのコンポーネントです。  
+各ページへのナビゲーションを追加します。
+
+- vueamplifydev/src/App.vue
+
+の内容を
+
+- notes/src/App.vue
+
+に上書き
 
 
 
