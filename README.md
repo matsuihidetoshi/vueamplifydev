@@ -595,6 +595,88 @@ type PrivateNote
 }
 ```
 
+## バックエンドのデプロイ
+
+現状では、バックエンドの構築と連携を実現するのに最低限必要なローカル環境のコードを自動生成しただけでした。  
+ここでは、生成されたコードに基づき、実際にバックエンド環境をAWSクラウド上に構築していきます。
+
+#### バックエンドのデプロイコマンドを実行
+
+```
+amplify push
+```
+
+#### デプロイする内容の確認(y or nを入力しEnter)
+
+yを入力しEnter
+
+```
+Scanning for plugins...
+Plugin scan successful
+✔ Successfully pulled backend environment default from the cloud.
+
+Current Environment: default
+
+| Category | Resource name | Operation | Provider plugin   |
+| -------- | ------------- | --------- | ----------------- |
+| Auth     | notes694e6855 | Create    | awscloudformation |
+| Api      | notes         | Create    | awscloudformation |
+? Are you sure you want to continue? (Y/n) y
+```
+
+#### GraphQLを操作するコードを自動生成するかの確認(y or nを入力しEnter)
+
+yを入力しEnter
+
+```
+GraphQL schema compiled successfully.
+
+Edit your schema at /home/ec2-user/environment/notes/amplify/backend/api/notes/schema.graphql or place .graphql files in a directory at /home/ec2-user/environment/notes/amplify/backend/api/notes/schema
+? Do you want to generate code for your newly created GraphQL API (Y/n) y
+```
+
+#### 自動生成するGraphQLコードの言語の選択(↑↓でカーソル移動、Enterで決定)
+
+javascriptを選択しEnter
+
+```
+? Choose the code generation language target (Use arrow keys)
+❯ javascript 
+  typescript 
+  flow 
+```
+
+#### 自動生成するGraphQLのコードの階層構造を指定(階層構造を入力しEnter)
+
+デフォルト(src/graphql/**/*.js)のままEnter
+
+```
+? Enter the file name pattern of graphql queries, mutations and subscriptions (src/
+graphql/**/*.js)
+```
+
+#### 全てのタイプのGraphQLの操作コードを自動生成するかの確認(y or nを入力しEnter)
+
+yを入力しEnter
+
+```
+? Do you want to generate/update all possible GraphQL operations - queries, mutatio
+ns and subscriptions (Y/n) y
+```
+
+#### GraphQLの各リソースの相互参照の深さを指定(数値を入力しEnter)
+
+デフォルト(2)のままEnter
+
+```
+? Enter maximum statement depth [increase from default if your schema is deeply nested] (2)
+```
+
+
+
+
+
+
 
 
 
