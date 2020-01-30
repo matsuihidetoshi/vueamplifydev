@@ -44,13 +44,17 @@ npm i -g @aws-amplify/cli
 
 Vue CLIを使って、必要な設定を行いながらVue.jsプロジェクトを作成していきます。
 
-#### notesというプロジェクト/ディレクトリ名で作成
+#### vue create
+
+notesという名前でプロジェクトを作成
 
 ```
 vue create notes
 ```
 
-#### Manually(手動設定)を選択(↑↓でカーソル移動、Enterで決定)
+#### 設定方法の選択(↑↓でカーソル移動、Enterで決定)
+
+Manually select featuresを選択しEnter
 
 ```
 Vue CLI v4.1.2
@@ -78,7 +82,7 @@ Vue CLI v4.1.2
  
  #### Historyモードを選択(y or nを入力しEnter)
  
- yを選択
+ yを入力しEnter
  
  ```
  ? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) y
@@ -86,7 +90,7 @@ Vue CLI v4.1.2
  
  #### ESLintの設定を選択(↑↓でカーソル移動、Enterで決定)
  
- デフォルトのESLint with error prevention onlyを選択
+ デフォルトのESLint with error prevention onlyを選択しEnter
  
  ```
  ? Pick a linter / formatter config: (Use arrow keys)
@@ -98,7 +102,7 @@ Vue CLI v4.1.2
 
 #### Lintのタイミングの設定(↑↓でカーソル移動、Enterで決定)
 
-デフォルトのLint on saveを選択
+デフォルトのLint on saveを選択しEnter
 
 ```
 ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -108,7 +112,7 @@ Vue CLI v4.1.2
  
 #### Configファイルの設定(↑↓でカーソル移動、Enterで決定)
 
-デフォルトのIn dedicated config filesを選択
+デフォルトのIn dedicated config filesを選択しEnter
 
 ```
 ? Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
@@ -118,7 +122,7 @@ Vue CLI v4.1.2
 
 #### 今回の設定を保存指定次回以降に転用するかの選択(y or nを入力しEnter)
 
-任意だが、今回はnを選択
+任意だが、今回はnを入力しEnter
 
 ```
 ? Save this as a preset for future projects? (y/N) n
@@ -156,7 +160,7 @@ cd notes
 npm run serve
 ```
 
-Cloud9画面の上部のPreview→Preview Running Applicationを選択し、Vue.jsのデフォルト画面が表示されればOK  
+Cloud9画面の上部のPreview→Preview Running Applicationを、Vue.jsのデフォルト画面が表示されればOK  
 *そのままサーバーは起動したまま、別ターミナルを開き、notesディレクトリに移動して以降の作業を実施
 
 ## Amplify初期設定
@@ -182,7 +186,7 @@ Press Enter to continue
 
 #### AWSリソースのリージョン選択(↑↓でカーソル移動、Enterで決定)
 
-下記の通りap-northeast-1を選択
+下記の通りap-northeast-1を選択しEnter
 
 ```
 Specify the AWS Region
@@ -322,7 +326,7 @@ Noneを選択しEnter
 
 #### アプリケーションのタイプを選択(↑↓でカーソル移動、Enterで決定)
 
-javascriptを選択
+javascriptを選択しEnter
 
 ```
 ? Choose the type of app that you're building (Use arrow keys)
@@ -333,7 +337,7 @@ javascriptを選択
 
 #### フレームワークを選択(↑↓でカーソル移動、Enterで決定)
 
-vueを選択
+vueを選択しEnter
 
 ```
 ? What javascript framework are you using (Use arrow keys)
