@@ -829,6 +829,35 @@ npm run serve
 
 が完成しました。あとは、フロントエンドの本番環境のホスティングができれば完成です。
 
+#### GitHubにコードをプッシュ
+
+まず、今までの変更をGitでコミットしていきます。
+
+```
+git add .
+git commit -m 'built application'
+```
+
+その後、GitHubにログインしてください。  
+その後、上部ナビゲーションバー右上の`+`をクリックし、`New repository`をクリックしてください。  
+`Repository name`に、`notes`と入力し、それ以外はデフォルトのまま`Create repository`をクリックしてください。  
+そのあとリダイレクトした画面で`…or push an existing repository from the command line`という項目があります。  
+その内容をコピーし、ターミナルでプロジェクトフォルダにて実行してください。
+
+```
+git remote add origin https://github.com/ユーザー名/notes.git
+git push -u origin master
+```
+
+下記のようにユーザー名、パスワードを求められるので、GitHubの`ユーザー名` `パスワード`を入力してください。
+
+```
+Username for 'https://github.com/matsuihidetoshi/notes-final.git':ユーザー名
+Password for 'https://matsuihidetoshi@github.com/matsuihidetoshi/notes-final.git':パスワード
+```
+
+これで、GitHubにコードがプッシュされ、デプロイの準備ができました。
+
 
 
 
