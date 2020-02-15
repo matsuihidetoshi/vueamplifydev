@@ -863,9 +863,13 @@ Password for 'https://matsuihidetoshi@github.com/matsuihidetoshi/notes-final.git
 通常、Webページをホスティングするには、サーバー構築・ネットワーク設定・ミドルウェアのインストール及び設定等が必要ですが、  
 Amplifyコンソールを使用するとWebインターフェースから少ないステップで簡単にデプロイできます。
 
+#### Amplifyコンソールを開く
+
 まず、AWSマネジメントコンソールから、`Amplify`を検索し、選択します。  
 Amplifyコンソールが開きますが、すでに`notes`というアプリケーションの項目が作成されているはずですので、それをクリックしてください。  
-  
+
+#### デプロイ - Githubの連携
+
 フロントエンドのコードとして、どのGitリポジトリを参照するかの選択するかの画面が表示されますので、`GitHub`を選択し、`Connect branch`をクリックしてください。  
   
 GitHubの認証ページが開きますので、`ユーザー名` `パスワード`を入力してログインしてください。  
@@ -873,9 +877,13 @@ OAuthによるアクセス許可の画面が表示されますので、`Authoriz
   
 `GitHub 認証が成功しました。`と表示されます。  
 下部の`リポジトリ`にて、`notes`を選択し、ブランチは`master`を選択し、`次へ`をクリックしてください。  
-  
+
+#### デプロイ - ビルド設定
+
 `ビルド設定の構成`画面が開くので、`Select a backend environment`で`default`を選択してください。
-  
+
+#### デプロイ - ロールの作成
+
 `Select an existing service role or create a new one so Amplify Console may access your resources.`という項目で、  
 `Create new role`をクリックしてください。  
   
@@ -887,7 +895,9 @@ OAuthによるアクセス許可の画面が表示されますので、`Authoriz
   
 確認画面が開きますが、そのまま`ロールの作成`をクリックしてください。  
 画面が遷移したら、そのページは閉じてしまって構いません。  
-  
+
+#### デプロイ- ビルド設定2
+
 先ほど開いていたAmplifyコンソールに戻り、  
 `Select an existing service role or create a new one so Amplify Console may access your resources.`の項目のプルダウンの横の🔄マークをクリックし、  
 先ほど作成した`amplifyconsole-backend-role`を選択してください。  
