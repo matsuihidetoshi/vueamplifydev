@@ -897,36 +897,8 @@ OAuthによるアクセス許可の画面が表示されますので、`Authoriz
 `確認`画面が表示されますが、`保存してデプロイ`をクリックしてください。  
   
 ここから少し時間がかかりますが（10分ほど）、デプロイのフローが終わるまでお待ちください。
-
-
-
-
-
-
-
-
-
-# vueamplifydev
-
+  
+デプロイが完了すると、`ドメイン`という項目ができていますので、そちらのリンクをクリックすると、アプリケーションが開きます。  
+  
+以上で終了です。お疲れ様でした！
 ## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
