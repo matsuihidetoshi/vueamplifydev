@@ -16,7 +16,7 @@ https://aws-amplify.github.io/
 
 ## このリポジトリのクローン
 
-必要コードを転用するため、このリポジトリを環境にクローン
+必要コードを転用するため、このリポジトリを環境にクローンします。
 
 ```
 git clone https://github.com/matsuihidetoshi/vueamplifydev.git
@@ -858,8 +858,45 @@ Password for 'https://matsuihidetoshi@github.com/matsuihidetoshi/notes-final.git
 
 これで、GitHubにコードがプッシュされ、デプロイの準備ができました。
 
+#### Amplifyコンソールからデプロイ
 
+通常、Webページをホスティングするには、サーバー構築・ネットワーク設定・ミドルウェアのインストール及び設定等が必要ですが、  
+Amplifyコンソールを使用するとWebインターフェースから少ないステップで簡単にデプロイできます。
 
+まず、AWSマネジメントコンソールから、`Amplify`を検索し、選択します。  
+Amplifyコンソールが開きますが、すでに`notes`というアプリケーションの項目が作成されているはずですので、それをクリックしてください。  
+  
+フロントエンドのコードとして、どのGitリポジトリを参照するかの選択するかの画面が表示されますので、`GitHub`を選択し、`Connect branch`をクリックしてください。  
+  
+GitHubの認証ページが開きますので、`ユーザー名` `パスワード`を入力してログインしてください。  
+OAuthによるアクセス許可の画面が表示されますので、`Authorize xxxx`をクリックしてください。
+  
+`GitHub 認証が成功しました。`と表示されます。  
+下部の`リポジトリ`にて、`notes`を選択し、ブランチは`master`を選択し、`次へ`をクリックしてください。  
+  
+`ビルド設定の構成`画面が開くので、`Select a backend environment`で`default`を選択してください。
+  
+`Select an existing service role or create a new one so Amplify Console may access your resources.`という項目で、  
+`Create new role`をクリックしてください。  
+  
+`ロールの作成`画面が表示されますので、デフォルトのまま`次のステップ: アクセス権限`をクリックしてください。
+  
+次の画面で`Attached アクセス権限ポリシー`という項目などが表示されますが、こちらもデフォルトのまま`次のステップ: タグ`をクリックしてください。  
+  
+次の画面で`タグの追加（オプション）`という項目が表示されますが、こちらもデフォルトのまま`次のステップ: 確認`をクリックしてください。  
+  
+確認画面が開きますが、そのまま`ロールの作成`をクリックしてください。  
+画面が遷移したら、そのページは閉じてしまって構いません。  
+  
+先ほど開いていたAmplifyコンソールに戻り、  
+`Select an existing service role or create a new one so Amplify Console may access your resources.`の項目のプルダウンの横の🔄マークをクリックし、  
+先ほど作成した`amplifyconsole-backend-role`を選択してください。  
+  
+その後、`次へ`をクリックしてください。  
+  
+`確認`画面が表示されますが、`保存してデプロイ`をクリックしてください。  
+  
+ここから少し時間がかかりますが（10分ほど）、デプロイのフローが終わるまでお待ちください。
 
 
 
