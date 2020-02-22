@@ -52,6 +52,15 @@ notesという名前でプロジェクトを作成
 vue create notes
 ```
 
+#### npmリポジトリの設定(y or nを入力しEnter)
+
+nを入力しEnter
+
+```
+?  Your connection to the default npm registry seems to be slow.
+   Use https://registry.npm.taobao.org for faster installation? (Y/n) n
+```
+
 #### 設定方法の選択(↑↓でカーソル移動、Enterで決定)
 
 Manually select featuresを選択しEnter
