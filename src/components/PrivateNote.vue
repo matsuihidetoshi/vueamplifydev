@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import { API, graphqlOperation} from "aws-amplify"
+import { API, Auth, graphqlOperation} from "aws-amplify"
 import { createPrivateNote } from "../graphql/mutations"
 import { listPrivateNotes } from "../graphql/queries"
 import { getPrivateNote } from "../graphql/queries"
@@ -29,14 +29,20 @@ export default {
       content: "",
       privateNote: null,
       privateNotes: [],
-      owner: localStorage.getItem("CognitoIdentityServiceProvider.74edqpq6ucndv92lt559la13p0.LastAuthUser"),
+      owner: "",
       limit: 2 ** 31 - 1
     }
   },
   mounted: function () {
-    this.displayPrivateNotes()
+    this.setOwner().then(
+      this.displayPrivateNotes()
+    )
   },
   methods: {
+    setOwner: async function () {
+      const user = await Auth.currentUserInfo()
+      this.owner = user.username
+    },
     createPrivateNote: async function () {
       if (this.content === "") return
       const privateNote = {content: this.content}
