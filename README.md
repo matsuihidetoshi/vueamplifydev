@@ -14,7 +14,10 @@ https://aws-amplify.github.io/
 
 **よくある問題点**
 
-- アカウントの設定によっては**うまく動作しない場合が有ります**ので、その場合は  
+- 本資料は、ブラウザとして**Chrome**を使うことを想定しております。Safariなどを使用した場合、  
+**Cloud9でアプリケーションがうまくプレビューできない**と言った不具合が想定されます。
+
+- AWSアカウントの設定によっては**うまく動作しない場合が有ります**ので、その場合は  
 **rootアカウントでAmplifyユーザーにAdministratorの権限を与えて**お試しください。
 
 - [途中](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/README.md#vuejs%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80notes%E3%81%AB%E7%A7%BB%E5%8B%95)、`vue create`コマンドを実行し、Vue.jsプロジェクトフォルダができた後は、  
