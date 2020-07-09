@@ -41,13 +41,13 @@ https://aws-amplify.github.io/
 
 ![aws_top](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/aws_top.png)
 
-[AWSトップページ](https://aws.amazon.com/jp/)にアクセスし、「コンソールにサインイン」をクリックします。
+- [AWSトップページ](https://aws.amazon.com/jp/)にアクセスし、「コンソールにサインイン」をクリックします。
 
 ***
 
-![aws_top](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/username.png)
+![username](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/username.png)
 
-ユーザー名を入力します（必要な権限を与えたIAMユーザーを作成済みの方はそちらでログインしていただいて構いません）。
+- ユーザー名を入力します（必要な権限を与えたIAMユーザーを作成済みの方はそちらでログインしていただいて構いません）。
 
 ***
 
