@@ -55,6 +55,14 @@ https://aws-amplify.github.io/
 
 - パスワードを入力し、「サインイン」をクリックします。
 
+***
+
+![username](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/choose_cloud9.png)
+
+- 「サービスを検索する」のフォームに「Cloud9」と入力し、検索結果（プルダウン）をクリックします。
+
+
+
 ## このリポジトリのクローン
 
 必要コードを転用するため、このリポジトリを環境にクローンします。
