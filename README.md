@@ -51,6 +51,10 @@ https://aws-amplify.github.io/
 
 ***
 
+![username](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/password.png)
+
+- パスワードを入力し、「サインイン」をクリックします。
+
 ## このリポジトリのクローン
 
 必要コードを転用するため、このリポジトリを環境にクローンします。
