@@ -31,7 +31,15 @@ https://aws-amplify.github.io/
 よほどアクセスが集中しない限り、ほとんど無視できるレベルの金額しか課金されませんが、  
 [本資料の最後](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/README.md#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%89%8A%E9%99%A4)にアプリケーションの削除手順を記載いたします。
 
-以下、Cloud9環境をChromeにて表示した状態の想定で構築の手順を記します。
+## Cloud9環境構築
+
+今回のハンズオン全体を進行するための統合開発環境(IDE)として、Cloud9を準備します。
+
+#### AWSマネジメントコンソールにサインイン
+
+![aws_top](https://github.com/matsuihidetoshi/vueamplifydev/blob/images/aws_top.png)
+
+[AWSトップページ](https://aws.amazon.com/jp/)にアクセスし、「コンソールにサインイン」をクリックします。
 
 ## このリポジトリのクローン
 
