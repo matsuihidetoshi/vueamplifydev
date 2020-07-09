@@ -37,7 +37,7 @@ https://aws-amplify.github.io/
 
 #### AWSマネジメントコンソールにサインイン
 
-![aws_top](https://github.com/matsuihidetoshi/vueamplifydev/blob/images/aws_top.png)
+![aws_top](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/aws_top.png)
 
 [AWSトップページ](https://aws.amazon.com/jp/)にアクセスし、「コンソールにサインイン」をクリックします。
 
