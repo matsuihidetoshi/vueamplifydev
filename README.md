@@ -81,6 +81,12 @@ https://aws-amplify.github.io/
 
 ***
 
+![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/finish_create_environment.png)
+
+- 「Create environment」をクリックします。
+
+- 環境構築と接続にしばらく時間がかかる（5〜10分程度）ので、待ちます。
+
 
 ## このリポジトリのクローン
 
