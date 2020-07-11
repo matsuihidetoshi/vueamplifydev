@@ -51,16 +51,35 @@ https://aws-amplify.github.io/
 
 ***
 
-![username](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/password.png)
+![password](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/password.png)
 
 - パスワードを入力し、「サインイン」をクリックします。
 
 ***
 
-![username](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/choose_cloud9.png)
+![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/choose_cloud9.png)
 
-- 「サービスを検索する」のフォームに「Cloud9」と入力し、検索結果（プルダウン）をクリックします。
+- 「サービスを検索する」のフォームに「Cloud9」と入力し、検索結果（プルダウン）の「Cloud9」をクリックします。
 
+***
+
+![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/create_environment.png)
+
+- 「Create environment」をクリックします。
+
+***
+
+![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/environment_name.png)
+
+- 「Name」に任意の環境名（ここでは例として「HandsOnEnvironment」）を入力し、「Next step」をクリックします。
+
+***
+
+![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/environment_config.png)
+
+- 全てデフォルトのまま「Next step」をクリックします。
+
+***
 
 
 ## このリポジトリのクローン
