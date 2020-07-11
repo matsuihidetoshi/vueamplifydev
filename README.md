@@ -63,29 +63,38 @@ https://aws-amplify.github.io/
 
 ***
 
-![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/create_environment.png)
+![create_environment](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/create_environment.png)
 
 - 「Create environment」をクリックします。
 
 ***
 
-![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/environment_name.png)
+![environment_name](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/environment_name.png)
 
 - 「Name」に任意の環境名（ここでは例として「HandsOnEnvironment」）を入力し、「Next step」をクリックします。
 
 ***
 
-![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/environment_config.png)
+![environment_config](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/environment_config.png)
 
 - 全てデフォルトのまま「Next step」をクリックします。
 
 ***
 
-![choose_cloud9](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/finish_create_environment.png)
+![finish_create_environment](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/finish_create_environment.png)
 
 - 「Create environment」をクリックします。
 
 - 環境構築と接続にしばらく時間がかかる（5〜10分程度）ので、待ちます。
+
+***
+
+![ide](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/ide.png)
+
+- Cloud9の環境が整いました。
+
+- 以降のターミナル（コマンド）/ファイル操作は、上記画面で実施してください。
+
 
 
 ## このリポジトリのクローン
