@@ -1047,6 +1047,7 @@ Amplifyコンソールを使用するとWebインターフェースから少な�
   
 - ここから少し時間がかかりますが（10分ほど）、デプロイのフローが終わるまでお待ちください。
 - デプロイが完了してからURLのリンクをクリックすると、アプリケーションが開きます。 
+- 動作確認し、問題なければ完成です。おめでとうございます！
 
 ***
 
@@ -1083,10 +1084,27 @@ Project deleted locally.
 
 #### Amplifyコンソールから削除
 
-S3にデプロイされたアプリケーションのフロントエンドも削除する必要があります。  
-**Amplifyコンソール**を開き、**全てのアプリ**→**notes**を選択してください。  
-画面右上の**アクション**から、**アプリの削除**を選択してください。  
-確認用ダイアログが表示されるので、フォームに**delete**を入力し、**Delete**を押下してください。
+S3にデプロイされたアプリケーションのフロントエンドも削除する必要があります。
+
+***
+
+![delete_select_notes](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/delete_select_notes.png)
+
+- **Amplifyコンソール**を開き、**全てのアプリ**→**notes**を選択してください。  
+
+***
+
+![delete](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/delete.png)
+
+- 画面右上の**アクション**から、**アプリの削除**を選択してください。  
+
+***
+
+![delete_confirm](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/delete_confirm.png)
+
+- 確認用ダイアログが表示されるので、フォームに**delete**を入力し、**Delete**を押下してください。
+
+***
 
 これで、今回のハンズオンで作成したアプリケーションの全てのリソースが削除されます。  
 **今回使用したCloud9環境を使用しない場合、別途削除していただく必要があります  
