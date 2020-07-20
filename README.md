@@ -908,11 +908,33 @@ git add .
 git commit -m 'built application'
 ```
 
-その後、GitHubにログインしてください。  
-その後、上部ナビゲーションバー右上の`+`をクリックし、`New repository`をクリックしてください。  
-`Repository name`に、`notes`と入力し、それ以外はデフォルトのまま`Create repository`をクリックしてください。  
-そのあとリダイレクトした画面で`…or push an existing repository from the command line`という項目があります。  
-その内容をコピーし、ターミナルでプロジェクトフォルダにて実行してください。
+その後、GitHubにサインインしてください。
+
+***
+
+![github_signin](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/github_signin.png)
+
+- ユーザー名またはメールアドレスとパスワードを入力し、「Sign in」をクリックします。
+
+***
+
+![new_repository](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/new_repository.png)
+
+- 上部ナビゲーションバー右上の`+`をクリックし、`New repository`をクリックしてください。
+
+***
+
+![create_repository](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/create_repository.png)
+
+- `Repository name`に、`notes`と入力し、それ以外はデフォルトのまま`Create repository`をクリックしてください。
+
+***
+
+![copy_push_command](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/copy_push_command.png)
+
+- `…or push an existing repository from the command line`という項目をコピーし、ターミナルでプロジェクトフォルダにて実行してください。
+
+***
 
 ```
 git remote add origin https://github.com/ユーザー名/notes.git
