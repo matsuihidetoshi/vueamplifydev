@@ -957,8 +957,6 @@ Amplifyコンソールを使用するとWebインターフェースから少な�
 
 #### Amplifyコンソールを開く
 
-***
-
 ![choose_amplify](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/choose_amplify.png)
 
 - AWSマネジメントコンソールから、`Amplify`を検索し、選択します。  
@@ -973,11 +971,9 @@ Amplifyコンソールを使用するとWebインターフェースから少な�
 
 #### デプロイ - Githubの連携
 
-***
-
 ![select_github](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/select_github.png)
 
-- どのGitリポジトリを参照するかの選択するかの画面が表示されますので、`GitHub`を選択し、`Connect branch`をクリックしてください。  
+- `GitHub`を選択し、`Connect branch`をクリックしてください。  
 
 ***
 
@@ -987,28 +983,48 @@ Amplifyコンソールを使用するとWebインターフェースから少な�
 - OAuthによるアクセス許可の画面が表示されますので、`Authorize aws-amplify-console`をクリックしてください。
 
 ***
-  
 
+![select_repository](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/select_repository.png)
 
-下部の`リポジトリ`にて、`notes`を選択し、ブランチは`master`を選択し、`次へ`をクリックしてください。  
+- `リポジトリ`は`GitHubユーザー名/notes`を選択し、ブランチは`master`を選択し、`次へ`をクリックしてください。  
+
+***
 
 #### デプロイ - ビルド設定
 
-`ビルド設定の構成`画面が開くので、`Select a backend environment`で`default`を選択してください。
+![build_config](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/build_config.png)
+
+- `ビルド設定の構成`画面が開くので、`Select a backend environment`で`default`を選択してください。
+- `Select an existing service role or create a new one so Amplify Console may access your resources.`という項目で、`Create new role`をクリックしてください。  
+
+***
 
 #### デプロイ - ロールの作成
 
-`Select an existing service role or create a new one so Amplify Console may access your resources.`という項目で、  
-`Create new role`をクリックしてください。  
-  
-`ロールの作成`画面が表示されますので、デフォルトのまま`次のステップ: アクセス権限`をクリックしてください。
-  
-次の画面で`Attached アクセス権限ポリシー`という項目などが表示されますが、こちらもデフォルトのまま`次のステップ: タグ`をクリックしてください。  
-  
-次の画面で`タグの追加（オプション）`という項目が表示されますが、こちらもデフォルトのまま`次のステップ: 確認`をクリックしてください。  
-  
-確認画面が開きますが、そのまま`ロールの作成`をクリックしてください。  
-画面が遷移したら、そのページは閉じてしまって構いません。  
+![role_service](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/role_service.png)
+
+- `ロールの作成`画面が表示されますので、デフォルトのまま`次のステップ: アクセス権限`をクリックしてください。
+
+***
+
+![role_policy](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/role_policy.png)
+
+- 次の画面で`Attached アクセス権限ポリシー`という項目などが表示されますが、こちらもデフォルトのまま`次のステップ: タグ`をクリックしてください。  
+
+***
+
+![role_tag.png](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/role_tag.png)
+
+- 次の画面で`タグの追加（オプション）`という項目が表示されますが、こちらもデフォルトのまま`次のステップ: 確認`をクリックしてください。
+
+***
+
+![role_confirm](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/role_confirm.png)
+
+- 確認画面が開きますが、そのまま`ロールの作成`をクリックしてください。
+- 画面が遷移したら、そのページは閉じてしまって構いません。
+
+***
 
 #### デプロイ- ビルド設定2
 
