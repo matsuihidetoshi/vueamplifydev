@@ -957,17 +957,39 @@ Amplifyコンソールを使用するとWebインターフェースから少な�
 
 #### Amplifyコンソールを開く
 
-まず、AWSマネジメントコンソールから、`Amplify`を検索し、選択します。  
-Amplifyコンソールが開きますが、すでに`notes`というアプリケーションの項目が作成されているはずですので、それをクリックしてください。  
+***
+
+![choose_amplify](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/choose_amplify.png)
+
+- AWSマネジメントコンソールから、`Amplify`を検索し、選択します。  
+
+***
+
+![select_notes](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/select_notes.png)
+
+- すでに`notes`というアプリケーションの項目が作成されているはずですので、それをクリックしてください。  
+
+***
 
 #### デプロイ - Githubの連携
 
-フロントエンドのコードとして、どのGitリポジトリを参照するかの選択するかの画面が表示されますので、`GitHub`を選択し、`Connect branch`をクリックしてください。  
+***
+
+![select_github](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/select_github.png)
+
+- どのGitリポジトリを参照するかの選択するかの画面が表示されますので、`GitHub`を選択し、`Connect branch`をクリックしてください。  
+
+***
+
+![oauth](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/oauth.png)
+
+- GitHubの認証ページが開く場合は、`ユーザー名またはメールアドレス` と `パスワード`を入力してログインしてください。  
+- OAuthによるアクセス許可の画面が表示されますので、`Authorize aws-amplify-console`をクリックしてください。
+
+***
   
-GitHubの認証ページが開きますので、`ユーザー名` `パスワード`を入力してログインしてください。  
-OAuthによるアクセス許可の画面が表示されますので、`Authorize xxxx`をクリックしてください。
-  
-`GitHub 認証が成功しました。`と表示されます。  
+
+
 下部の`リポジトリ`にて、`notes`を選択し、ブランチは`master`を選択し、`次へ`をクリックしてください。  
 
 #### デプロイ - ビルド設定
