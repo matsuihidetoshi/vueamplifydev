@@ -1028,17 +1028,27 @@ Amplifyコンソールを使用するとWebインターフェースから少な�
 
 #### デプロイ- ビルド設定2
 
-先ほど開いていたAmplifyコンソールに戻り、  
-`Select an existing service role or create a new one so Amplify Console may access your resources.`の項目のプルダウンの横の🔄マークをクリックし、  
-先ほど作成した`amplifyconsole-backend-role`を選択してください。  
+![role_select](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/role_select.png)
+
+- 先ほど開いていたAmplifyコンソールに戻ってください。
+- `Select an existing service role or create a new one so Amplify Console may access your resources.`の項目のプルダウンの横の🔄マークをクリックして下さい。
+- 先ほど作成した`amplifyconsole-backend-role`を選択してください。  
+- その後、`次へ`をクリックしてください。  
+
+***
+
+![deploy_confirm](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/deploy_confirm.png)
+
+- `確認`画面が表示されますが、`保存してデプロイ`をクリックしてください。  
+
+***
+
+![deploy_progress](https://github.com/matsuihidetoshi/vueamplifydev/blob/master/images/deploy_progress.png)
   
-その後、`次へ`をクリックしてください。  
-  
-`確認`画面が表示されますが、`保存してデプロイ`をクリックしてください。  
-  
-ここから少し時間がかかりますが（10分ほど）、デプロイのフローが終わるまでお待ちください。
-  
-デプロイが完了すると、`ドメイン`という項目ができていますので、そちらのリンクをクリックすると、アプリケーションが開きます。  
+- ここから少し時間がかかりますが（10分ほど）、デプロイのフローが終わるまでお待ちください。
+- デプロイが完了してからURLのリンクをクリックすると、アプリケーションが開きます。 
+
+***
 
 ## アプリケーションの削除
 
