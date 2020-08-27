@@ -15,13 +15,12 @@
   </div>
 </template>
 <script>
-import { API, Auth, graphqlOperation} from "aws-amplify"
+import { API, graphqlOperation} from "aws-amplify"
 import { createPrivateNote } from "../graphql/mutations"
 import { listPrivateNotes } from "../graphql/queries"
 import { getPrivateNote } from "../graphql/queries"
 import { onCreatePrivateNote } from "../graphql/subscriptions"
 import _ from 'lodash'
-
 export default {
   name: 'PrivateNote',
   data () {
@@ -34,15 +33,10 @@ export default {
     }
   },
   mounted: function () {
-    this.setOwner().then(
-      this.displayPrivateNotes()
-    )
+    this.owner = this.$store.state.user.username
+    this.displayPrivateNotes()
   },
   methods: {
-    setOwner: async function () {
-      const user = await Auth.currentUserInfo()
-      this.owner = user.username
-    },
     createPrivateNote: async function () {
       if (this.content === "") return
       const privateNote = {content: this.content}

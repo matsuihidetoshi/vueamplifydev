@@ -36,7 +36,7 @@ AmplifyEventBus.$on('authState', async (state) => {
   if (state === 'signedOut'){
     user = null
     store.commit('setUser', null)
-    router.push({path: '/signin'})
+    router.push({path: '/signin'}, () => {})
   } else if (state === 'signedIn') {
     user = await getUser();
     router.push({path: '/'})
