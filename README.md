@@ -851,10 +851,23 @@ Amplify関連のパッケージを導入するために記述を追加します�
 
 に上書き
 
+#### store/index.js
+
+Vuexを使って状態管理をするためのファイルです。  
+ログインユーザーの情報を管理してページやAPIへのアクセス制御に使用します。
+
+- vueamplifydev/src/store/index.js
+
+の内容を
+
+- notes/src/store/index.js
+
+に上書き
+
 #### router/index.js
 
 ルーティングの設定を記述するファイルです。  
-ログイン状態を管理してページのアクセス制御をします。
+上記のstore/index.jsで管理しているユーザー情報を使ってページのアクセス制御をします。
 
 - vueamplifydev/src/router/index.js
 
