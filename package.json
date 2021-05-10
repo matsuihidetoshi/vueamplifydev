@@ -11,7 +11,7 @@
     "aws-amplify": "^2.2.1",
     "aws-amplify-vue": "^1.1.1",
     "core-js": "^3.4.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
